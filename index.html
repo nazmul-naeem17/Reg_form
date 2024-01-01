@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header align="center">
+        <img src="ictdd.png" alt="ict" align="left">
+        <img src="mujib100.png" alt="mujib" align="right">
+        <img src="govt_logo.png" alt="govt_logo" width="100"><hr>
+        <nav align="left">
+        <a href="#">Home</a>
+        <a href="#">Course Module</a>
+        <a href="#">Schedule</a>
+        <a href="#">Success</a>
+        <a href="#">Attendance</a>
+        <a href="#">FAQ</a>
+        <a href="#">Login</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h2 style="color: orange;">Student Registration Form</h2><hr>
+        <form id="frm_student_reg">
+            <fieldset>
+                <legend>Please Enter Relevant Information</legend>
+                                <div class="form_label">District*</div>
+                                <select id="district_id" name="district_id" required>
+                                    <option value="">--Select One--</option>
+                                    <option value="1">Dhaka</option>
+                                    <option value="2">Narayanganj</option>
+                                    <option value="3">Chittagong</option>
+                                    <option value="4">Feni</option>
+                                    <option value="5">Mymensing</option>
+                                    <option value="6">Pirojpur</option>
+                                    <option value="7">Noakhali</option>
+                                    <option value="8">Khulna</option>
+                                    <option value="9">Cumilla</option>
+                                    <option value="10">Cox's Bazar</option>
+                                </select>
+                                <div class="form_label">Course*</div>
+                                <div>
+                                    <select id="slot_id" name="slot_id" required>
+                                        <option value="">--Select One--</option>
+                                        <option value="11">Full Stack Web Development - 2023 (2023,November)</option>
+                                        <option value="12">Graphic Design - 2023 (2023,February)</option>
+                                        <option value="13">Digital Marketing - 2023 (2023,June)</option>
+                                    </select>
+                                </div>
+                                <div class="form_label">Student Name*</div>
+                                <div>
+                                    <input type="text" id="student_name" name="student_name" value="" maxlength="50" required />
+                                </div>
+                                <div class="form_label">Father Name*</div>
+                                <div>
+                                    <input type="text" id="father_name" name="father_name" value="" maxlength="51" required />
+                                </div>
+                                <div class="form_label">Mother Name*</div>
+                                <div>
+                                    <input type="text" id="mother_name" name="mother_name" value="" maxlength="51" required />
+                                </div>
+                                <div>
+                                    <label for="birthday">Date of Birth:</label><br>
+                                    <input type="date" id="birthday" name="birthday">
+                                </div>
+                                    <div class="form_label">
+                                        Gender*
+                                        </div>
+                                        <label> &nbsp;&nbsp;<input type="radio" name="gender" value="male" required> Male</label>
+                                    <label><input type="radio" name="gender" value="female">
+                                        Female</label>
+
+                                <div class="check_data_class">
+                                    Physically Handicapped* <br>
+                                    <label>&nbsp;&nbsp;<input type="radio" name="handicapped" value="1">Yes</label>
+                                    <label><input type="radio" name="handicapped" value="-1">No</label>
+                                </div>
+                                <div class="form_label">Email*</div>
+                                    <input type="email" id="email" name="email" value="" placeholder="example@mail.com" required />
+                                </div>
+                                <div class="form_label">Mobile*</div>
+                                    <input type="number" id="number" name="number" value="" placeholder="01234567891" maxlength="11" required />
+                                </div>
+                                <div class="form_label">Identification Type*</div>
+                                <div>
+                                    <select name="identification_type" id="identification_type" required>
+                                        <option value="">Select One</option>
+                                        <option value="birth_certificate">Birth Certificate No.</option>
+                                        <option value="national_id">National ID</option>
+                                    </select>
+                                </div>
+                <div class="form_label">Identification No.*</div>
+                                    <input type="text" id="identification_no"
+                                        name="identification_no" value="" minlength="10"
+                                        maxlength="17" placeholder="1980XXXXXXXXXXXXX"/>
+                                <div class="form_label">Home District*</div>
+                                <select name="district_id" id="district_id" required>
+                                    <option value="">--Select One--</option>
+                                    <option value="1">Dhaka</option>
+                                    <option value="2">Narayanganj</option>
+                                    <option value="3">Chittagong</option>
+                                    <option value="4">Feni</option>
+                                    <option value="5">Mymensing</option>
+                                    <option value="6">Pirojpur</option>
+                                    <option value="7">Noakhali</option>
+                                    <option value="8">Khulna</option>
+                                    <option value="9">Cumilla</option>
+                                    <option value="10">Cox's Bazar</option>
+                                    <option value="11">Sylhet</option>
+                                    <option value="12">Tangail</option>
+                                    <option value="13">Thakurgaon</option>
+                                </select>
+                                <div class="form_label">Upazila*</div>
+                                <select name="upazila_id" id="upazila_id" required>
+                                    <option value="">--Select One--</option>
+                                    <option value="173" data-district="37">Ali Kadam </option>                                   
+                                    <option value="197" data-district="34">Anwara </option>
+                                    <option value="353" data-district="4">Araihazar </option>
+                                    <option value="187" data-district="28">Ashuganj </option>                                  
+                                    <option value="138" data-district="39">Babuganj </option>                                 
+                                   <option value="269" data-district="36">Bagaichhari </option>
+                                    <option value="29" data-district="23">Bagatipara </option>
+                                    <option value="403" data-district="53">Bagerhat Sadar </option>
+                                    <option value="60" data-district="26">Bagha </option>                                   
+                                    <option value="61" data-district="26">Bagmara </option>
+                                    <option value="471" data-district="63">Bahubal </option>
+                                    <option value="311" data-district="12">Bajitpur </option>
+                                    <option value="139" data-district="39">Bakerganj </option>                                   
+                                    <option value="140" data-district="39">Banaripara </option>                                    
+                                    <option value="354" data-district="4">Bandar </option>
+                                    <option value="174" data-district="37">Bandarban Sadar </option>
+                                    <option value="211" data-district="34">Bandor (Ctg Port) Thana</option>
+                                    <option value="198" data-district="34">Banshkhali </option>
+                                    <option value="430" data-district="57">Batiaghata </option>
+                                    <option value="147" data-district="41">Bhola Sadar </option>
+                                    <option value="36" data-district="24">Bholahat </option>
+                                    <option value="218" data-district="29">Brahmanpara </option>
+                                    <option value="148" data-district="41">Burhanuddin </option>
+                                    <option value="219" data-district="29">Burichang </option>
+                                    <option value="233" data-district="38">Chakaria </option>
+                                    <option value="200" data-district="34">Chandanaish </option>
+                                    <option value="212" data-district="34">Chandgaon Thana</option>
+                                    <option value="220" data-district="29">Chandina </option>
+                                    <option value="189" data-district="30">Chandpur Sadar </option>
+                                    <option value="149" data-district="41">Char Fasson </option>
+                                </select>
+                                <div class="form_label">Village/House No./Road No./Other Alternative*</div>
+                                    <input type="text" id="village" name="village" value="" maxlength="101" required />
+                                <div class="form_label">Post Office*</div>
+                               
+                                    <input type="text" id="post_office" name="post_office">                                       value="" maxlength="101" required />
+                                <div class="form_label">Educational Qualification*</div>
+                                    <select id="educational_qualification" name="educational_qualification" required>
+                                        <option value="">--Select One--</option>
+                                        <option value="higher secondary">Secondary(SSC)/Equivalent</option>
+                                        <option value="higher secondary">Higher Secondary(HSC)/Equivalent</option>
+                                        <option value="bachelor">Bachelor</option>
+                                        <option value="master">Master</option>
+                                        <option value="phd">Phd</option>
+                                    </select>
+                                            <div>Have any computer?*</div> 
+                                            <label> <input type="radio" name="computer" value="Yes">Yes</label>
+                                            <label><input type="radio" name="computer" value="No">No</label>
+                                <div class="form_label">Photograph*</div>
+                                <div>
+                                    <input type="file" id="attachments" name="attachments" required />
+                                    <div class="form_label">(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</div>
+                                <div class="form_label">Signature*</div>
+                                <div>
+                                    <input type="file" id="signature" name="signature" required />
+                                    <div class="form_label">(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d29521.320258990985!2d91.77598617121038!3d22.34739660776978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDIwJzUwLjYiTiA5McKwNDcnNTYuNyJF!5e0!3m2!1sen!2sbd!4v1704120990721!5m2!1sen!2sbd" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" align="right"></iframe>
+                                <div><input type="submit" value="Submit Data" /></div>
+            </fieldset>
+        </form>
+    </main>
+    <hr>
+    <footer align="center">
+        <img src="pm.png" alt="pm" height="400px" width="100%">
+        <div style="color:rgb(0, 198, 253)">&#169; All Right Reserved By Nazmul Naeem</div>
+    </footer>
+</body>
+</html>
